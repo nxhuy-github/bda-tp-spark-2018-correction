@@ -1,0 +1,14 @@
+image: forge.univ-lyon1.fr:4567/emmanuel.coquery/tp-spark-2018-correction
+
+stages:
+  - test
+
+test-python:
+  stage: test
+  script:
+    - pytest python --on-spark --spark_home $SPARK_HOME
+
+test-scala:
+  stage: test
+  script:
+    - sbt assembly

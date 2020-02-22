@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pip = "==18.0"
+pyspark = "==2.2.0.post0"
+pytest = "*"
+pytest-spark = "*"
+pylint = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "2.7"
+
+[pipenv]
+allow_prereleases = true
